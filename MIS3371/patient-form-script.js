@@ -73,8 +73,8 @@
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("confirm_password").value;
     let userid = document.getElementById("userid").value.toLowerCase();
-    let firstName = document.getElementById("first_name").value.toLowerCase();
-    let lastName = document.getElementById("last_name").value.toLowerCase();
+    let firstName = document.getElementById("first_name");
+    let lastName = document.getElementById("last_name");
 
     let pwError = document.getElementById("pwError");
     let passwordError = document.getElementById("passwordError");
