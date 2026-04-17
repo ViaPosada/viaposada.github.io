@@ -141,7 +141,6 @@
                  maxlength="30" required
                 pattern="[A-Za-z][A-Za-z0-9_-]{4,29}"
                  title="Enter 5 to 30 characters with no spaces. Must start with a letter">
-          <div class="help-text">Max 30 characters</div>
         </div>
       </td>
     </tr>
@@ -152,7 +151,7 @@
           <label for="password">Create Password</label>
           <input class="input-box" type="password" id="password" name="password" 
                  minlength="8" maxlength="30" required
-                 pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#%^&*()\-_\+=\\/><\.,`~]).{8,30}"
+                 pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#%^&*()\-_\+=\\/><\.,`~]).{8,30}"
                  title="Enter 8 to 30 characters. Must include at least one uppercase letter, lowercase letter, number, and one special character">
           <div class="help-text">8 to 30characters with at least one uppercase letter, lowercase letter, number, and special character</div>
         </div>
@@ -281,8 +280,8 @@
           <label for="zip">Zip</label>
           <input class="input-box" type="text" id="zip" name="zip" 
                  maxlength="10" placeholder="77004" required
-                 pattern="[0-9]{5}(-[0-9]{4})?"
-                 title="Enter 5-digit zip code or zip+4 code (e.g. 77004 or 77004-1234)">
+                 pattern="[0-9]{5}?"
+                 title="Enter 5-digit zip code">
         </div>
       </td>
     </tr>
