@@ -112,14 +112,16 @@
     let value = ssnInput.value.replace(/\D/g, "").substring(0, 9); 
     let formatted = "";
 
-    if (value.length >= 3) {
-      formatted = value.substring(0, 3) + "-";
+    if (value.length > 0) {
+      formatted = value.substring(0, 3);
     }
-    if (value.length >= 5) {
-      formatted += value.substring(3, 5) + "-";
+    
+    if (value.length > 3) {
+      formatted += "-" + value.substring(3, 5);
     }
-    if (value.length >= 9) {
-      formatted += value.substring(5, 9);
+
+    if (value.length > 5) {
+      formatted += "-" + value.substring(5, 9);
     }
 
     ssnInput.value = formatted;
@@ -355,14 +357,6 @@
   
 
 
-
-
-
-
-
-
-
-  
 
 
 
